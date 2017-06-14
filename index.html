@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- HighStock chart -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="/dash/highstock/js/highstock.js"></script>
+	<!-- AngularJS -->
+	<script src="/dash/angular/angular.min.js"></script>
+
+
+  <script src="js/modules/login.module.js"></script>
+  <script src="js/controllers/login.controller.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/dash/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/dash/bootstrap/css/bootstrap-theme.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+
+
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+  	<!-- Angular Material Library -->
+  	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+	<title>Token</title>
+</head>
+
+<body ng-app='login'>
+
+<div ng-controller="loginctrl" layout="column" ng-cloak>
+
+  <md-content layout-padding>
+    <form name="userForm">
+     
+      <div layout-gt-sm="row">
+
+        <div flex="50" hide-xs hide-sm>
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>User</label>
+            <input type="text" required name="name" ng-model="username" />
+          </md-input-container>
+        </div>
+      </div>
+
+      <div layout-gt-sm="row">
+        <div flex="50" hide-xs hide-sm>
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>Pass</label>
+            <input type="password" name="email" ng-model="password" required  />
+          </md-input-container>
+        </div>
+      </div>
+      <md-button ng-click="login()" class="md-raised">Login</md-button>
+    </form>
+  </md-content>
+
+</div>
+
+	
+
+</body>
+
+</html>

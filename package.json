@@ -1,0 +1,17 @@
+{
+  "name": "AuthToken",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.2",
+    "ejs": "2.5.2",
+    "express": "~4.1.1",
+    "express-session": "^1.14.1",
+    "node-php": "0.0.1",
+    "oauth2orize": "^1.5.1",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0",
+    "passport-http-bearer": "^1.0.1",
+    "passport-local": "^1.0.0"
+  }
+}
