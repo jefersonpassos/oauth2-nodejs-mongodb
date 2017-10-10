@@ -1,0 +1,19 @@
+{
+  "name": "oauth2-nodejs-mongodb",
+  "description": "",
+  "scripts": {
+    "postdeploy": "node server.js"
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
